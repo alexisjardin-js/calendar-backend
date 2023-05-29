@@ -25,7 +25,7 @@ const createEvent = async (req, res = response) => {
 
     const eventSaved = await event.save();
 
-    console.log(req.body);
+    console.log('evento creado');
     res.json({
       ok: true,
       msg: eventSaved,
